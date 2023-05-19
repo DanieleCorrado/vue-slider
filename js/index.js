@@ -56,6 +56,10 @@ createApp({
         this.activeImage--;
 
       }
+    },
+
+    selectImage(index) {
+      this.activeImage = index;
     }
 
   }

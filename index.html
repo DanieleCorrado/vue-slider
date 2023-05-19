@@ -42,7 +42,7 @@
 
             <div class="column">
 
-              <img class="demo cursor" style="width:100%" v-for="(img, index) in images" :src="img.image" :class="activeImage === index ? 'active': ''" :alt="img.title">
+              <img class="demo cursor" style="width:100%" v-for="(img, index) in images" :src="img.image" :class="activeImage === index ? 'active': ''" :alt="img.title" @click="selectImage(index)">
 
             </div>
 
