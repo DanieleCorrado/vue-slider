@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Carousel</title>
+
+  </head>
+
+  <body>
+
+    <!-- Contenitore galleria immagini -->
+    
+    <div class="container row">
+      
+      <div class="slides">
+
+        <!-- Immagine in evidenza -->
+
+          <div class="mySlides">
+            <img src="img/01.webp">
+          </div>
+
+          <div class="mySlides">
+              <img src="img/02.webp">
+          </div>
+
+          <div class="mySlides">
+            <img src="img/03.webp">
+          </div>
+
+          <div class="mySlides">
+            <img src="img/04.webp">
+          </div>
+
+          <div class="mySlides">
+            <img src="img/05.webp">
+        </div>
+
+        <!-- Descrizione immagine -->
+            
+        <div class="caption-container">
+          <h4 id="title"></h4>    
+          <span id="description"></span>    
+        </div>
+
+      </div>
+
+      <div class="thumbnail">
+
+        <!-- immagini Thumbnail -->
+
+        <div class="">
+
+          <div class="column">
+
+            <img class="demo cursor" src="img/01.webp" style="width:100%" onclick="currentSlide(1)" alt="Marvel Spiderman Miles Morales">
+
+          </div>
+
+          <div class="column">
+
+            <img class="demo cursor" src="img/02.webp" style="width:100%" onclick="currentSlide(2)" alt="Ratchet & Clank: Rift Apart">
+
+          </div>
+          <div class="column">
+
+            <img class="demo cursor" src="img/03.webp" style="width:100%" onclick="currentSlide(3)" alt="Fortnite">
+
+          </div>
+          <div class="column">
+
+            <img class="demo cursor" src="img/04.webp" style="width:100%" onclick="currentSlide(4)" alt="Stray">
+
+          </div>
+          <div class="column">
+
+            <img class="demo cursor" src="img/05.webp" style="width:100%" onclick="currentSlide(5)" alt="Avengers">
+
+          </div>
+
+          <!-- Pulsanti avanti e indietro -->
+        
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+      </div>
+      
+    </div>
+    
+    
+    <!-- Javascript -->
+
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,109 @@
+/* Regole generali */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Regole immagine principale */
+
+.container {
+  position: relative;
+  width: 700px;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 50px;
+}
+
+
+.mySlides {
+  width: 500px;
+  display: none;
+  position: relative;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 500px;
+  object-fit:cover;
+}
+
+.mySlides span {
+  position: absolute;
+  bottom: 15%;
+  left: 20%;
+  color: white;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Regole pulsati avanti e indietro*/
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  right: 10%;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  transform: rotate(90deg);
+}
+
+.prev {
+  top: 10%;
+}
+
+.next {
+  top: 95%;
+  
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Regole descrizione immagine */
+
+.caption-container {
+  bottom: 10%;
+  right: 30%;
+  position: absolute;
+  text-align: center;
+  padding: 2px 16px;
+  color: white;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column img {
+  height: 97px;
+  object-fit:cover;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
