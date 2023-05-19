@@ -22,7 +22,7 @@
           <!-- Immagine in evidenza -->
 
             <div class="mySlides">
-              <img :src="images[activeImage].image">
+              <img :src="images[activeImage].image" :alt="images[activeImage].title">
             </div>
 
           <!-- Descrizione immagine -->
@@ -42,7 +42,7 @@
 
             <div class="column">
 
-              <img class="demo cursor" style="width:100%" v-for="(img, index) in images" :src="img.image" :class="activeImage === index ? 'active': ''" alt="Marvel Spiderman Miles Morales">
+              <img class="demo cursor" style="width:100%" v-for="(img, index) in images" :src="img.image" :class="activeImage === index ? 'active': ''" :alt="img.title">
 
             </div>
 
